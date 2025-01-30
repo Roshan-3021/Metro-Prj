@@ -1,0 +1,26 @@
+<div class="tracker">
+    <h1>Track My Metro</h1>
+    <p>Current Time: {{ currentTime | date: 'shortTime' }}</p>
+    <p>Current Station: {{ stations[currentStation] }}</p>
+    <p>Next Station: 
+      {{ direction === 1 
+        ? (currentStation + 1 < stations.length ? stations[currentStation + 1] : 'End') 
+        : (currentStation - 1 >= 0 ? stations[currentStation - 1] : 'Start') }}
+    </p>
+
+    <div class="progress-bar">
+      <div 
+        *ngFor="let station of stations; let i = index" 
+        class="progress-segment"
+        [style.width.%]="100 / stations.length"
+        [style.background]="getSegmentColor(i)">
+      </div>
+    </div>
+    
+    <div class="stations">
+      <span *ngFor="let station of stations; let i = index" 
+        [class.active]="i === currentStation">
+        {{ station }}
+      </span>
+    </div>
+  </div>

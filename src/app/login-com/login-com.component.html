@@ -1,0 +1,17 @@
+<div class="form">
+    <br/>
+    
+    <br /><br /><br />
+    <div id="container">
+        <h2>Login</h2>
+        <form #logform="ngForm" (ngSubmit)="checkuser(logform)">
+            <label for="Email">Email:</label>
+            <input type="email" name="email" ngModel>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" ngModel>
+            <button type="submit">Login</button>
+            <div class="or">or</div>
+        </form>
+        <p class="login-link">Create a new account? <a routerLink="/signup">Sign in</a></p>
+    </div>
+</div>

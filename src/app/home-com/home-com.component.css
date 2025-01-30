@@ -1,0 +1,34 @@
+.home-container {
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #5E239D; /* Text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.slideshow-container {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+
+}
+
+.slideshow-image {
+    width: 100%;
+    height: 400px;
+    border: 2px solid #f2edf6; /* Border color matching the theme */
+    
+}
+
+.home-container p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}

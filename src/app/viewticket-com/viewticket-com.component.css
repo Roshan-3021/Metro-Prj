@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light gray background for the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.ticket {
+    background-color: #9B59B6; /* Purple background for the ticket */
+    color: white; /* White text color for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the ticket */
+    width: 600px; /* Fixed width for the ticket */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    position: relative; /* Positioning for pseudo-elements */
+    margin-left: 26%;
+}
+
+.ticket::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the strip */
+    width: 100%;
+    height: 10px; /* Height of the header strip */
+    background-color: #8E44AD; /* Darker purple for the header strip */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.ticket h1 {
+    margin: 0; /* Remove margin */
+    font-size: 24px; /* Font size for the title */
+    text-align: center; /* Center the title text */
+}
+
+.ticket-info {
+    margin: 15px 0; /* Margin around ticket info */
+    font-size: 18px; /* Font size for the ticket details */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.ticket-info p {
+    margin: 5px 0; /* Margin for each paragraph */
+}
+
+.ticket-footer {
+    margin-top: 15px; /* Margin above the footer */
+    font-size: 15px; /* Smaller font size for footer */
+    text-align: center; /* Center the footer text */
+    color: #D1C4E9; /* Light purple for footer text */
+}
+
+.highlight {
+    font-weight: bold; /* Bold font for highlighted text */
+    color: #FFD700; /* Gold color for highlights */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    margin: 0 5px;
+    margin-left: 47%;
+    margin-top: 20px;
+    background-color: #a56ce3;
+    color: #f0f0f0;
+}
+
+button:hover {
+    background-color: #4A1A7A;
+    opacity: 0.9;
+}

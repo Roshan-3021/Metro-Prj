@@ -1,0 +1,194 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure body takes up full height */
+html,
+body {
+    height: 100%;
+}
+
+/* Purple theme background and text colors */
+body {
+    background-color: #EADCF8;
+    /* Light purple background */
+    color: #3D1766;
+    /* Dark purple text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Push footer to the bottom */
+}
+
+/* Styling for logo in the navbar */
+nav ul li img {
+    height: 50px;
+    /* Adjust size to fit the navbar */
+    width: auto;
+    /* Maintain aspect ratio */
+    vertical-align: middle;
+    /* Align image with text */
+    margin-right: 10px;
+    /* Add space after the logo */
+}
+
+/* Align the navigation items and logo */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* Align logo and links vertically */
+    justify-content: flex-end;
+    /* Align everything to the right */
+    gap: 15px;
+    /* Space between items */
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #5E239D;
+    /* Rich purple */
+    color: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Ensure header aligns right */
+    border-radius: 5px;
+}
+
+/* Navigation menu styling */
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #7C4DD4;
+    /* Hover with lighter purple */
+}
+
+/* Marquee section styling */
+marquee {
+    background-color: #C8A2E0;
+    /* Softer purple */
+    color: #3D1766;
+    /* Dark purple text */
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #5E239D;
+    /* Matches header */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking */
+}
+
+/* Footer text styling */
+footer p {
+    margin: 0;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #343a40;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn1 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.0rem;
+}
+
+.dropbtn1:hover {
+    background-color: #7C4DD4;
+    /* Hover with lighter purple */
+}
+
+.header-img {
+    display: flex;
+    margin-right: 600px;
+}
+
+.header-img li img {
+    margin-right: 10px;
+    height: 50px;
+    width: auto;
+}
+
+.header-img li h1 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin: 0;
+}

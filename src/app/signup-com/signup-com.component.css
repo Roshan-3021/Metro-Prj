@@ -1,0 +1,157 @@
+/* Modal Container */
+.container {
+    background: url('/sign.jpg') no-repeat center center / cover;
+    height: 100vh;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefbfb;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+   
+}
+
+/* Modal Header */
+.modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Input Fields on Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6200ea;
+    /* Purple border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+/* Error Message Styles */
+.error {
+    color: red;
+    /* Validation messages in red */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Checkbox Container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Checkbox Label */
+.checkbox-container label {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Create Account Button */
+.create-account {
+    background-color: #d1c4e9;
+    /* Light purple color */
+    color: #ffffff;
+}
+
+.create-account:hover {
+    background-color: #b39ddb;
+    /* Slightly darker purple */
+}
+
+/* Google Sign-In Button */
+.google-signin {
+    background-color: #db4437;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-signin img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.google-signin:hover {
+    background-color: #c13527;
+}
+
+/* Divider */
+.or {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .modal {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

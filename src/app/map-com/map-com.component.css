@@ -1,0 +1,82 @@
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 90vh;
+    border: 2px solid #800080;
+    /* Purple border for the container */
+}
+
+h1 {
+    color: #800080;
+    /* Purple color for the heading */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.info-section {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-titles,
+.info-values {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.info-item {
+    flex: 1;
+    padding: 8px;
+    font-weight: bold;
+    color: #800080;
+    /* Purple color for the information titles */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.info-value {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Hover effect for info items */
+.info-item:hover {
+    background-color: #800080;
+    color: white;
+}
+
+/* Hover effect for info values */
+.info-value:hover {
+    background-color: #e5e5e5;
+}

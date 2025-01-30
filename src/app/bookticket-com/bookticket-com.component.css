@@ -1,0 +1,80 @@
+.box {
+    background: url('/pic2.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Fieldset */
+/* fieldset {
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+} */
+
+/* Form Elements */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+select option {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Placeholder Text */
+::placeholder {
+    color: #aaa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Labels */
+label {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form Buttons */
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #aaa;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}

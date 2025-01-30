@@ -1,0 +1,91 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: #9b59b6 5px 4px 3px;
+}
+
+.icons {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.help-contact h2,
+.offices h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.schedule-meeting,
+.contacts {
+    margin-top: 15px;
+}
+
+.contact-item,
+.schedule-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c4a8cf;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px solid #9b59b6;
+    /* Border color for the table */
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #bb93cb;
+    /* Header background color */
+    color: #fff;
+    /* Header text color */
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+.row-hover:hover {
+    background-color: #f0f8ff;
+}
+
+/* Styling classes */
+.highlight {
+    font-weight: bold;
+    color: #444;
+}

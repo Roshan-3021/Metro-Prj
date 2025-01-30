@@ -1,0 +1,64 @@
+<div class="container">
+    <h1 [ngClass]="'highlight'">{{ title }}</h1>
+    <p>If you have any questions or need assistance, feel free to contact us!</p>
+
+    <div class="icons">
+        <a href="tel:+917058164197" class="icon" title="Call Us">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/917058164197?text=Welcome%20to%20Pune%20Maha%20Metro" class="icon" title="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="help-contact">
+        <h2 [ngClass]="'highlight'">Help & Contact</h2>
+        <div class="schedule-meeting">
+            <div class="schedule-item">
+                <strong>Schedule Meeting</strong><br>
+                {{ scheduleMeeting.person }}<br>
+                Contact: {{ scheduleMeeting.contact }}<br>
+                Phone: {{ scheduleMeeting.phone }}<br>
+                Time: {{ scheduleMeeting.time }}
+            </div>
+        </div>
+
+        <div class="contacts">
+            <div class="contact-item">
+                <strong>General Correspondence</strong><br>
+                {{ generalCorrespondence.office }}<br>
+                {{ generalCorrespondence.address }}<br>
+                Email: <a href="mailto:{{ generalCorrespondence.email }}">{{ generalCorrespondence.email }}</a><br>
+                Phone: {{ generalCorrespondence.phone }}
+            </div>
+            <div class="contact-item">
+                <strong>Quick Response Team</strong><br>
+                Emergency: {{ quickResponse.emergency }}<br>
+                BSNL No: {{ quickResponse.bsnl }}
+            </div>
+            <div class="contact-item">
+                <strong>Operations</strong><br>
+                Queries/Feedback: <a href="mailto:{{ operations.email }}">{{ operations.email }}</a><br>
+                Phone: {{ operations.phone }}
+            </div>
+        </div>
+    </div>
+
+    <div class="offices">
+        <h2 [ngClass]="'highlight'">OUR OFFICES</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th [ngClass]="'highlight'">Sr. No</th>
+                    <th [ngClass]="'highlight'">Office Address</th>
+                    <th [ngClass]="'highlight'">Contact</th>
+                </tr>
+                <tr *ngFor="let office of officeContacts" [ngClass]="'row-hover'">
+                    <td>{{ office.srNo }}</td>
+                    <td [innerHTML]="office.officeAddress"></td>
+                    <td>{{ office.contact }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

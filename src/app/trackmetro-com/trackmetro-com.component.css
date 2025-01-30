@@ -1,0 +1,44 @@
+.tracker {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #efe1fd;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90%;
+    margin: 20px auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: #5E239D;
+  }
+  .progress-bar {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  .progress-segment {
+    height: 100%;
+    transition: background 0.5s;
+  }
+  .stations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .stations span {
+    font-size: 0.8rem;
+    color: #555;
+  }
+  .stations span.active {
+    color: #4caf50;
+    font-weight: bold;
+  }
+
+  p {
+    color: #5E239D;
+  }

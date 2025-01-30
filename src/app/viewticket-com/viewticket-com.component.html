@@ -1,0 +1,14 @@
+<div class="ticket" *ngIf="booking">
+    <h1>Metro Train Ticket</h1>
+    <div class="ticket-info" *ngFor="let bk of booking">
+        <p><span class="highlight">Booking ID:</span> {{bk.bookingId}}</p>
+        <p><span class="highlight">From:</span> {{bk.from}}</p>
+        <p><span class="highlight">To:</span> {{bk.to}}</p>
+        <p><span class="highlight">Number of Tickets:</span> {{bk.noofTicket}}</p>
+        <p><span class="highlight">Fare:</span> {{bk.totalFare}}</p>
+        <hr>
+    </div>
+    <div class="ticket-footer">
+    </div>
+</div>
+<button type="button" (click)="backHome()">Back</button>

@@ -1,0 +1,11 @@
+<div class="about-us-container">
+    <h1>About Us</h1>
+    <p>Meet the talented individuals behind the Metro App:</p>
+    <div class="team-member" *ngFor="let member of teamMembers">
+      <img [src]="member.photo" [alt]="member.name" class="member-photo" />
+      <h2>{{ member.name }}</h2>
+      <p><strong>Education:</strong> {{ member.education }}</p>
+      <p><strong>Role:</strong> {{ member.role }}</p>
+      <p>{{ member.description }}</p>
+    </div>
+</div>

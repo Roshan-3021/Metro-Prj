@@ -1,0 +1,161 @@
+/* General styling for the about us section */
+.about-us {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+  background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Styling for the introduction section */
+.intro {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* About Us heading */
+.intro h1 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Centers the heading */
+}
+
+/* Intro paragraph */
+.intro p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 15px auto 0;
+  /* Centers the paragraph */
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Team section */
+.team {
+  margin-top: 60px;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.team h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #2980b9;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Team grid */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+/* Team member card */
+.team-member {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Team member image */
+.team-member img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-member:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Team member name */
+.team-member h3 {
+  font-size: 1.6rem;
+  margin: 15px 0;
+  color: #34495e;
+}
+
+/* Team member education and role */
+.team-member .education,
+.team-member .role {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.team-member .role {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Team member description */
+.team-member .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 15px;
+}
+
+.team-member:hover .description {
+  color: #2c3e50;
+  transition: color 0.3s ease-in-out;
+}

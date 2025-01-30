@@ -1,0 +1,83 @@
+<header>
+
+  <nav>
+    <ul>
+      <div class="header-img">
+        <li>
+          <img src="logo.png" alt="metro_logo">
+        </li>
+        <li>
+          <h1> <i>पुणे महा मेट्रो</i></h1>
+        </li>
+      </div>
+
+      <li><a routerLink="">Home</a></li>
+
+      <div class="dropdown">
+        <button class="dropbtn1">Tickets</button>
+        <div class="dropdown-content">
+          <a routerLink="bookTicket">Book Ticket</a>
+          <a routerLink="viewTicket">View Ticket</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn1">Track Metro</button>
+        <div class="dropdown-content">
+          <a routerLink="trackmetro">Purple</a>
+          <a routerLink="trackaquametro">Aqua</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn1">Services</button>
+        <div class="dropdown-content">
+          <a routerLink="timeTable">Timetable</a>
+          <a routerLink="stations">Stations</a>
+          <a routerLink="map">Map</a>
+          <a routerLink="contact">Contact us</a>
+        </div>
+      </div>
+
+      <li><a routerLink="aboutus">About us</a></li>
+
+
+
+      <h1>Hi,{{currentuser}}</h1>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <img src="download1.jpg" alt="Menu" title="Menu">
+        </button>
+        <div class="dropdown-content">
+          <a routerLink="signup">Signin</a>
+          <a routerLink="signout" *ngIf="islogin">Logout</a>
+          <a routerLink="login" *ngIf="!islogin">Login</a>
+        </div>
+
+      </div>
+    </ul>
+  </nav>
+
+
+</header>
+
+
+
+<!-- Continuous Marquee Section -->
+<marquee behavior="scroll" direction="left" scrollamount="3">
+  WELCOME TO PUNE MAHA METRO &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; EASY TICKET BOOKING &nbsp;&nbsp;&nbsp; |
+  &nbsp;&nbsp;&nbsp;
+  REAL-TIME TIMETABLE &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; NAVIGATE WITH EASE &nbsp;&nbsp;&nbsp; |
+  &nbsp;&nbsp;&nbsp;
+  WELCOME TO PUNE MAHA METRO &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; EASY TICKET BOOKING &nbsp;&nbsp;&nbsp; |
+  &nbsp;&nbsp;&nbsp;
+  REAL-TIME TIMETABLE &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; NAVIGATE WITH EASE
+</marquee>
+
+<router-outlet></router-outlet>
+<app-stations-com *ngIf="showStationsComponent"></app-stations-com>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Pune Maha Metro. All rights reserved.</p>
+</footer>

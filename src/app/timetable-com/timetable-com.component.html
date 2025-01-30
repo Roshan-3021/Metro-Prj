@@ -1,0 +1,28 @@
+<div [ngClass]="{ 'header': true }">
+    <h1>{{ title }}</h1>
+</div>
+
+<div [ngClass]="{ 'language-select': true }">
+    <button class="language-button" [ngClass]="{ 'selected': selectedLanguage === 'marathi' }"
+        (click)="showTimetable('marathi')">
+        Marathi
+    </button>
+    <button class="language-button" [ngClass]="{ 'selected': selectedLanguage === 'english' }"
+        (click)="showTimetable('english')">
+        English
+    </button>
+</div>
+
+<div [ngClass]="{ 'timetable-container': true }">
+    <div *ngIf="selectedLanguage === 'marathi'">
+        <h2>{{ timetableData.marathi.title }}</h2>
+        <img [src]="timetableData.marathi.imagePath" alt="Metro Timetable Marathi" class="timetable-image">
+        <p [ngClass]="{ 'caption': true }">{{ timetableData.marathi.caption }}</p>
+    </div>
+
+    <div *ngIf="selectedLanguage === 'english'">
+        <h2>{{ timetableData.english.title }}</h2>
+        <img [src]="timetableData.english.imagePath" alt="Metro Timetable English" class="timetable-image">
+        <p [ngClass]="{ 'caption': true }">{{ timetableData.english.caption }}</p>
+    </div>
+</div>

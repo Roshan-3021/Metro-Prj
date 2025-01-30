@@ -1,0 +1,38 @@
+<div class="box">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form #bookform="ngForm" (ngSubmit)="onSubmit(bookform)">
+        <div class="container">
+            <label for="fromstation">From Station:</label>
+            <select name="from" id="fromstation" [(ngModel)]="from" (change)="onSourceChange()">
+                <option value="" disabled selected hidden>Select From Station</option>
+                <option *ngFor="let s of sources">{{s.name}}</option>
+            </select>
+
+            <label for="tostation">To Station:</label>
+            <select name="to" id="tostation" [(ngModel)]="to">
+                <option value="" disabled selected hidden>Select To Station</option>
+                <option *ngFor="let d of destination">{{d}}</option>
+            </select>
+
+            <label for="noofticket">Number of Tickets:</label>
+            <select name="noofTicket" id="noofticket" [(ngModel)]="noofTicket">
+                <option value="" disabled selected hidden>Select Number of Tickets</option>
+                <option *ngFor="let n of NoofTicket.split(',')" [value]="n">{{n}}</option>
+            </select>
+
+            <div class="form-buttons">
+                <button type="submit" [disabled]="!isFormValid()">Book Ticket</button>
+            </div>
+        </div>
+    </form>
+
+</div>

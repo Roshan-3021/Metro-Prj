@@ -1,0 +1,61 @@
+/* Container for the entire component */
+div {
+    border: 1px solid #5E239D;
+    /* Border color matching the theme */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the container */
+    margin: 20px;
+    /* Margin outside the container */
+    background-color: #f9f9f9;
+    /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Header styling */
+h1 {
+    color: #5E239D;
+    /* Header color */
+    text-align: center;
+    /* Center align the header */
+    margin-bottom: 20px;
+    /* Space below the header */
+}
+
+/* Styling for the list of lines */
+ul {
+    list-style-type: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+/* Styling for each list item */
+li {
+    background-color: #e0e0e0;
+    /* Light grey background for list items */
+    border-radius: 4px;
+    /* Rounded corners for list items */
+    padding: 10px;
+    /* Padding inside list items */
+    margin: 5px 0;
+    /* Margin between list items */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #d1c4e9;
+    /* Change background color on hover */
+}
+
+/* Optional: Style for the child component container */
+app-stationschild-com {
+    display: block;
+    /* Ensure it behaves like a block element */
+    margin: 20px 0;
+    /* Space around the child component */
+}

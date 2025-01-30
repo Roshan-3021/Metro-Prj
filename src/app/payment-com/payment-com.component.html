@@ -1,0 +1,26 @@
+<div class="box">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br>
+    
+    <div class="payment-container">
+        <h1>Make a Payment</h1>
+        <p>Scan the QR code below to proceed with your payment.</p>
+    
+    
+        <div *ngIf="!paymentDone">
+            <button type="button" (click)="startPaymentTimer()" [disabled]="timerStarted">Complete Payment</button>
+        </div>
+        <img src="payment_qr.jpg" alt="Payment QR Code" class="payment-image">
+        <p *ngIf="timerStarted">Payment processing....{{remainingTime}} seconds remaining.</p>
+    
+        <div>
+            <button type="button" [disabled]="!paymentDone" (click)="onSubmit()">View Ticket details</button>
+        </div>
+    
+    </div>
+</div>

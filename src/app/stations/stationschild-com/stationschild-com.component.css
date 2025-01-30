@@ -1,0 +1,61 @@
+/* Container for the entire component */
+div {
+    border: 1px solid #5E239D;
+    /* Border color matching the theme */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the container */
+    margin: 20px;
+    /* Margin outside the container */
+    background-color: #f9f9f9;
+    /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center align text inside the div */
+}
+
+/* Header styling */
+h2 {
+    color: #5E239D;
+    /* Header color */
+    margin-bottom: 20px;
+    /* Space below the header */
+}
+
+/* Button styling */
+button {
+    background-color: #5E239D;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners for buttons */
+    padding: 10px 20px;
+    /* Padding inside buttons */
+    margin: 5px;
+    /* Space between buttons */
+    cursor: pointer;
+    /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #7B1FA2;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
+}
+
+/* Optional: Focus effect for accessibility */
+button:focus {
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(94, 35, 157, 0.5);
+    /* Custom focus outline */
+}

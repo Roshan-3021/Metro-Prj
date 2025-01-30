@@ -1,0 +1,41 @@
+import { Routes } from '@angular/router';
+import { LoginComComponent } from './login-com/login-com.component';
+import { BookticketComComponent } from './bookticket-com/bookticket-com.component';
+import { TimetableComComponent } from './timetable-com/timetable-com.component';
+import { MapComComponent } from './map-com/map-com.component';
+import { ContactComComponent } from './contact-com/contact-com.component';
+import { NotfoundComComponent } from './notfound-com/notfound-com.component';
+import { StationsComComponent } from './stations/stations-com/stations-com.component';
+import { SignupComComponent } from './signup-com/signup-com.component';
+import { HomeComComponent } from './home-com/home-com.component';
+import { SignoutComComponent } from './signout-com/signout-com.component';
+import { PrivacypoliciesComComponent } from './privacypolicies-com/privacypolicies-com.component';
+import { ServicesComComponent } from './services-com/services-com.component';
+import { TrackmetroComComponent } from './trackmetro-com/trackmetro-com.component';
+import { PaymentComComponent } from './payment-com/payment-com.component';
+import { BookingsummaryComComponent } from './bookingsummary-com/bookingsummary-com.component';
+import { AboutusComComponent } from './aboutus-com/aboutus-com.component';
+import { TrackaquametroComComponent } from './trackaquametro-com/trackaquametro-com.component';
+import { ViewticketComComponent } from './viewticket-com/viewticket-com.component';
+
+export const routes: Routes = [
+    { path: '', component: HomeComComponent },
+    { path: 'bookTicket', component: BookticketComComponent },
+    { path: 'viewTicket', component: ViewticketComComponent },
+    { path: 'trackmetro', component: TrackmetroComComponent },
+    { path: 'trackaquametro', component: TrackaquametroComComponent },
+    { path: 'payment', component: PaymentComComponent },
+    { path: 'bookingsummary', component: BookingsummaryComComponent },
+    { path: 'timeTable', component: TimetableComComponent },
+    { path: 'stations', component: StationsComComponent },
+    { path: 'map', component: MapComComponent },
+    { path: 'contact', component: ContactComComponent },
+    { path: 'aboutus', component: AboutusComComponent },
+    { path: 'signup', component: SignupComComponent },
+    { path: 'services', component: ServicesComComponent },
+    { path: 'privacypolicies', component: PrivacypoliciesComComponent },
+    { path: 'signout', component: SignoutComComponent },
+    { path: 'login', component: LoginComComponent },
+    { path: '**', component: NotfoundComComponent }
+];
+
